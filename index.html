@@ -40,7 +40,7 @@
                     var g = imgData[1];
                     var b = imgData[2];
                     //console.log(r, g, b);
-                         if (r==255)
+                         if ((r==255)&&(g==255)&&(b==255))
                         {
                             w++;
                         }
@@ -53,6 +53,8 @@
                 }
 
             }
+            alert(b);
+            alert(w);
             alert((b*100)/(369*363)+'%');
         }
     </script>
