@@ -12,6 +12,7 @@
 <body>
     <button onclick="F1()">картинка</button>
     <button onclick="F2()">ок</button>
+    <button onclick="F3()">Кривая инт.</button>
     <canvas id="a" width="640" height="640"></canvas>
     <script>
         var a = document.getElementById('a');
@@ -60,6 +61,29 @@
             
             
             alert((b*100)/(369*363)+'%');
+        }
+
+        function F3() {
+         
+            for (var x = 0; x <= 369; x++) {
+                
+                    var imgData = c.getImageData(x, 100, 1, 1).data;
+                    var r = imgData[0];
+                    var g = imgData[1];
+                    var b = imgData[2];
+                    //console.log(r, g, b);
+                     
+                        var p = c.createImageData(1,1);
+		p.data[0]=255;
+		p.data[1]=0;
+		p.data[2]=0;
+		p.data[3]=255;
+		c.putImageData(p,x,y);
+
+                
+            
+            
+            
         }
     </script>
 </body>
