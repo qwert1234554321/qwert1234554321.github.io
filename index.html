@@ -65,13 +65,13 @@
 
         function F3() {
          
-            for (var x = 0; x <= 369; x++) {
+            for (var x = 0; x <= 500; x++) {
                 
                     var imgData = c.getImageData(x, 100, 1, 1).data;
                     var r = imgData[0];
                     var g = imgData[1];
                     var b = imgData[2];
-                    //console.log(r, g, b);
+                    console.log(r, g, b);
                      
                         var p = c.createImageData(1,1);
 		p.data[0]=255;
